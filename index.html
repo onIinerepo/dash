@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OTT DASH Player</title>
+
+  <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    video {
+      width: 100%;
+      max-width: 1200px;
+      height: auto;
+      background: #000;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<video id="videoPlayer" controls autoplay playsinline></video>
+
+  <script>
+    const video = document.getElementById("videoPlayer");
+
+    const mpdUrl =
+      "https://raw.githubusercontent.com/onIinerepo/dash/main/manifest.mpd";
+
+    const player = dashjs.MediaPlayer().create();
+
+    player.initialize(video, mpdUrl, true);
+  </script>
+
+</body>
+</html>
