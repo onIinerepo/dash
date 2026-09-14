@@ -5,20 +5,20 @@
 	xsi:schemaLocation="urn:mpeg:DASH:schema:MPD:2011 http://standards.iso.org/ittf/PubliclyAvailableStandards/MPEG-DASH_schema_files/DASH-MPD.xsd"
 	profiles="urn:mpeg:dash:profile:isoff-live:2011"
 	type="static"
-	mediaPresentationDuration="PT40.1S"
+	mediaPresentationDuration="PT40.2S"
 	maxSegmentDuration="PT4.0S"
-	minBufferTime="PT11.6S">
+	minBufferTime="PT11.8S">
 	<ProgramInformation>
 	</ProgramInformation>
 	<ServiceDescription id="0">
 	</ServiceDescription>
 	<Period id="0" start="PT0.0S">
 		<AdaptationSet id="0" contentType="video" startWithSAP="1" segmentAlignment="true" bitstreamSwitching="true" frameRate="30/1" maxWidth="1920" maxHeight="1080" par="16:9" lang="und">
-			<Representation id="0" mimeType="video/mp4" codecs="avc1.640032" bandwidth="954685" width="1920" height="1080" sar="1:1">
+			<Representation id="0" mimeType="video/mp4" codecs="avc1.640032" bandwidth="1091189" width="1920" height="1080" sar="1:1">
 				<SegmentTemplate timescale="15360" initialization="init-$RepresentationID$.m4s" media="chunk-$RepresentationID$-$Number%05d$.m4s" startNumber="1">
 					<SegmentTimeline>
-						<S t="0" d="89088" r="5" />
-						<S d="81920" />
+						<S t="0" d="90624" r="5" />
+						<S d="74240" />
 					</SegmentTimeline>
 				</SegmentTemplate>
 			</Representation>
